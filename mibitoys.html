@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+  <meta name="viewport" content="width=device-width;initial-scale=1">
+  <title>Mibi Toys - Magni Plushy Balls</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Verdana', 'Georgia','Book-antiqua' sans-serif;
+}
+
+h2 {
+  font-family: "Garamond";
+  font-optical-sizing: 20px;
+  text-align: center;
+  padding: 0;
+  color: #003324;
+  margin-top : 9%; 
+}
+
+h1 {
+  font-family: "Garamond";
+  font-optical-sizing: 20px;
+  text-align: center;
+  padding: 0; 
+}
+
+label {
+  font-weight: bold;
+}
+
+.linkDecor {
+  text-decoration:none;
+  color:black;
+}
+
+.linkDecor:hover {
+  opacity: 0.7;
+}
+
+.standardWriting {
+  font-weight: bold;
+  font-family:"Garamond";
+  font-optical-sizing: 20px;
+  text-align:center;
+  color: #003324;           
+}
+
+.ClickToClose {
+  color: grey;
+  margin-top:-10px;
+  font-weight: lighter;
+}
+
+.footerText {
+  font-family:"Garamond";
+  font-optical-sizing: 10px;
+  text-align:right;
+  color: #003324; 
+  font-style: italic;
+  font-size:medium; 
+}
+
+.smImage{
+  border-radius: 5px;
+  vertical-align: sub;
+}
+
+.container-clickMe {
+  position: relative;
+  text-align: center;
+  color:#003324;
+}
+
+#img1-p1, #img1-p2, #img1-p3, #img2-p1, #img2-p2, #img2-p3, #img3-p1, #img3-p2, #img3-p3 {
+  position: absolute;
+  visibility: hidden;
+  font-optical-sizing: 10px;
+  color: #003324;
+  font-weight:bold;
+  background-color: white;
+  border-radius: 30%;
+}
+    
+#img1:hover , #img2:hover, #img3:hover {
+  transform: translateY(8px);
+}
+
+.expandingBox {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: 0.8s ease;
+  background-color: white;
+}
+
+.button {
+  margin-top: auto;
+  padding: 12px 16px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family:"Garamond";
+  font-optical-sizing: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #003324;
+  border: none;
+  border-radius: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+    background-color: rgb(218, 217, 214);
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*For mobile*/
+[class*="col-"] {
+  width: 100%;  
+}
+
+@media only screen and (max-width: 600px) {
+  .col-m-1 {width:8.33%;}
+  .col-m-2 {width:16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  #img_header_1 {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #img_header_2 {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+   #hidden1 {
+    visibility: hidden;
+  }
+  #h-1 {
+    min-height: 5em;
+  }
+
+  #Img_babycrawl {
+    margin-left:15%;
+    margin-top:10px;
+  }
+}
+
+/* For tablet */
+@media only screen and (min-width: 600px){
+  .col-t-1 {width:8.33%;}
+  .col-t-2 {width:16.66%;}
+  .col-t-3 {width: 25%;}
+  .col-t-4 {width: 33.33%;}
+  .col-t-5 {width: 41.66%;}
+  .col-t-6 {width: 50%;}
+  .col-t-7 {width: 58.33%;}
+  .col-t-8 {width: 66.66%;}
+  .col-t-9 {width: 75%;}
+  .col-t-10 {width: 83.33%;}
+  .col-t-11 {width: 91.66%;}
+  .col-t-12 {width: 100%;}
+
+  #presentation-3 {
+    width: 60%;
+    left: 20%;
+  }
+
+  #img1-p1{
+    bottom:1%;
+    left: 35%;
+  }
+
+  #img1-p2 {
+    top: 55%;
+    right:10%;
+  }
+
+  #img1-p3 {
+    top:25%;
+    left:35%;
+  }
+
+  #img2-p1 {
+    bottom:35%;
+    left:10%;
+  }
+
+  #img2-p2 {
+    top: 75%;
+    right:5%;
+  }
+
+  #img2-p3 {
+    top: 25%;
+    right:30%;
+  }
+
+  #img3-p1 {
+    bottom:15%;
+    left: 15%
+  }
+
+  #img3-p2 {
+    top:47%;
+    right: 0%
+  }
+
+  #img3-p3 {
+    top:21%;
+    left:45%
+  }
+
+  #img_header_1 {
+    width: 60%;
+    margin-top: -10%;
+   }
+
+  #h-1 {
+    margin-top: -3%;
+  }
+
+  #Img_babycrawl {
+    margin-left:15%;
+    margin-top:10px;
+  }
+}
+
+/* For desktop */
+@media only screen and (min-width: 768px){
+  .col-d-1 {width:8.33%;}
+  .col-d-2 {width:16.66%;}
+  .col-d-3 {width: 25%;}
+  .col-d-4 {width: 33.33%;}
+  .col-d-5 {width: 41.66%;}
+  .col-d-6 {width: 50%;}
+  .col-d-7 {width: 58.33%;}
+  .col-d-8 {width: 66.66%;}
+  .col-d-9 {width: 75%;}
+  .col-d-10 {width: 83.33%;}
+  .col-d-11 {width: 91.66%;}
+  .col-d-12 {width: 100%;}
+
+  #presentation-3 {
+    width: 33.33%;
+    left:0%;
+  }
+
+  #img1-p1{
+    bottom:36%;
+    left:16px;
+  }
+
+  #img1-p2 {
+    top:46%;
+    right:16px;
+  }
+
+  #img1-p3 {
+    top:21%;
+    right:40%;
+  }
+
+  #img_header_1 {
+    width: 30%;
+    margin-top: 0;
+  }
+
+  #img_header_2 {
+    width: 30%;    
+  }
+
+  #h-1 {
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  #Img_babycrawl {
+    width:50%;
+    margin-left:20%;
+  }
+
+}
+</style>
+</head>
+<body onload = "typeWriter()">
+
+
+<!-- Header-->
+
+<div>
+  <div>
+    <a class="linkDecor" target="_blank" href="https://www.facebook.com/MibiToys/">     
+        <img class="smImage"  src="Facebook.JPG" alt="Link to Facebook" width="20em" height="auto">
+     </a>
+    <a class="linkDecor" target="_blank" href="https://www.instagram.com/mibitoys">
+       <img class="smImage" src="Instagram.JPG" alt="Link to Instagram" width="20em" height="auto"> 
+     </a>
+      <a class="linkDecor" target="_blank" href="https://www.tiktok.com/@mibitoys">
+        <img  class="smImage" src="tiktok.JPG" alt="Link to TikTok" width="20em" height="auto" >
+        </a>
+  </div>
+</div>
+<div id="header" class="row">
+  <img id="img_header_1" class="col-t-12 col-d-4;"  src="Logo + Asian baby.jpg" name="baby1" 
+  alt="Happy Baby" max-width="60%;" height="auto">
+  <h2 class="col-t-6 col-d-4;" id="h-1"></h2>
+  <img id="img_header_2" class="col-t-6 col-d-4; " src="2 x happy baby (black and white).jpg" name="baby2" 
+   alt="Happy babies" max-width="60%;" height="auto">
+</div>
+       
+<hr>
+
+ <!--first product presentation-->
+  <h2 style="margin-top:0;">We are Irish, 
+     young at heart, full of joy, and bursting with ideas. Here is our toy: 
+  </h2>
+        
+    <div name="Main" class="row ">
+      <div class="col-t-6 col-d-4 container-clickMe">
+        <h1>Magni</h1>
+        <img id="img1" src="div Main - Magni.jpg" onclick="openMagniTab()" 
+        alt="Magnet balls" width="100%" height="auto">
+        <p id="img1-p1" >Click me!!!</p>
+        <p id="img1-p2" >Click me!!!</p>
+        <p id="img1-p3" >Click me!!!</p>
+        <div id="magni" class="expandingBox" >         
+          <p class="standardWriting">Each magnet is secured in pouches <br> underneath the balls surface.</p>
+          <p class="standardWriting">The outer surface remains smooth,<br> with no parts that could be swallowed.</p>
+          <p class="standardWriting">Each ball attracts or repels according to the magnets polarity.
+            This process creates invisible obstacles that will trigger natural curiosities.</p>
+          <img src="div subMain - magnet pouch.jpg" alt="Magnet in pouch" width="75%" height="30%"> 
+          <p class="ClickToClose">Click again to close</p>
+        </div> 
+      </div>
+      <div class=" col-t-6 col-d-4 container-clickMe">
+        <h1>Plushy</h1>
+        <img id="img2" src="div Main - Plushy.jpg" onclick="openPlushyTab()" 
+         alt="Plush balls" width="100%" height="auto">
+        <p id="img2-p1" >Click me!!!</p>
+        <p id="img2-p2" >Click me!!!</p>
+        <p id="img2-p3" >Click me!!!</p>
+        <div id="plushy" class="expandingBox" >         
+          <p class="standardWriting">Soft, velvet like surface,with durable stiches.</p>
+          <p class="standardWriting">Works fantastic as a sensory toy.</p>
+          <p class="standardWriting">EN71/UKCA certified.Cadmium and Chronium free.<br>
+           Azo Dyes tested.Flamability tested.<br>BPA-free, non-toxic, Phtalate, Latex Free
+          <br>Lead and Formamide free.</p>
+          <img src="div subMain -plushies.jpg" alt="Magnet in pouch" width="70%" height="45%"> 
+          <p class="ClickToClose">Click again to close</p>
+        </div>
+    </div>
+      <div id="presentation-3" class=" col-t-12 col-d-4 container-clickMe">
+        <h1>Balls</h1>
+        <img id="img3" src="div Main - Balls.jpg" onclick="openBallsTab()" 
+        alt="Magnetic plush balls" width="100%" height="auto"> 
+        <p id="img3-p1">Click me!!!</p>
+        <p id="img3-p2">Click me!!!</p>
+        <p id="img3-p3">Click me!!!</p> 
+        <div id="balls" class="expandingBox" >         
+          <p class="standardWriting">12 balls with different dimensions.<br>Safe to throw arround.</p>
+          <p class="standardWriting">Stick to any magnetic or metallic surface.</p>
+          <p class="standardWriting">Compatible to any magnetic or metallic toy,<br>
+           like magnetic tiles, magnetic play boards <br>or magnetic numbers and letters.</p>
+          <img src="div subMain - robot.jpg" alt="Magnet in pouch" width="80%" height="35%"> 
+          <p class="ClickToClose">Click again to close</p>
+        </div>
+      </div>          
+   </div>
+
+ <hr>
+
+<!-- first buy button -->
+</div>
+<div class="row">
+  <div class="col-t-12 col-d-12">
+    <a style="text-decoration:none;color:#003324;" href="https://www.amazon.co.uk/gp/product/B08X4YLC52">
+      <div class="button">
+        Buy us from Amazon UK!
+      </div>
+      <img id="Img_babycrawl"src="Baby_crawl.jpg" alt="Plush ball worm" width="70%" height="10%">
+    </a>
+  </div>
+</div>
+
+<hr>
+
+<!-- video and word points-->
+<div class="row">
+  <div class="col-t-12 col-d-3">
+    <h2>BUILD FANTASTICAL CHARACTERS </h2>
+    <p class="standardWriting" >Originating from your baby's inner world as opposed to the screen world. 
+      With 12 balls per set ,the possibilities are endless.</p>
+    <h2>EARLY PHYSICS INTRODUCTION</h2>
+    <p class="standardWriting"  >Each ball attracts or repels depending on polarity , 
+      creating invisible obstacles, and triggering natural curiosities. 
+      This is a STEM, early development activity toy.</p>
+  </div>
+  <div class="col-t-12 col-d-6" >
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/5WbwjL6_l7g"
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+     allowfullscreen></iframe>
+  </div>
+  <div class="col-t-12 col-d-3">
+    <h2>STICK TO ANY METALIC SURFACE</h2>
+    <p class="standardWriting" > Create shapes on your fridge, metallic boards, 
+      other metallic or magnetic games, or anything metal. Super safe to throw around the room.</p>
+    <h2>SAFE & DURABLE </h2>
+    <p class="standardWriting">We are a registered brand , and this is our original & registered design. 
+      Our toys are crafted with high quality non-toxic materials, tested at the highest EU and UK standards. 
+      Designed in Ireland , with zero waste in mind.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- selling points read only-->
+<div class="row">
+  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-5%;" >
+    <label style="margin-left:10%;">EQUAL PLAY</label>
+    <img src="equal play.jpg" alt="Equal Play" width="80%" height="auto">    
+  </div>
+  <div  class="col-t-5 col-d-5" >
+    <p class="standardWriting" style="text-align:left;margin-top:5%;">Play is crucial to how children develop and learn about the world.
+    <br><br>We believe in giving all children equal opportunities, starting with preschool years.
+    <br><br> Our toy design and marketing stand against gender-stereotypes.</p>
+  </div>
+  <div id="hidden1" class="col-t-2 col-d-2"></div>
+</div>
+
+<div class="row">
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-10%;">
+    <label style="margin-left:10%;">SUPPORT INNOVATION</label>
+    <img src="support innovation.jpg" alt="Support Innovation" width="80%" height="auto">
+  </div>
+  <div class="col-t-5 col-d-5">
+    <p class="standardWriting" style="text-align:left;margin-top:5%;" >We are an Irish startup driven by the purpose of creating new concept , sustainable toys.
+      <br><br>Our philosophy is to create inteligent and durable non-screen toys .</p>
+  </div>
+</div>
+
+<div class="row">
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div class="col-t-4 col-d-4" style="margin-left:5%; margin-right:-5%;">
+    <label style="margin-left:10%;">ZERO WASTE IN MIND</label>
+    <img src="zero waste.jpg" alt="Zero waste in mind" width="80%" height="auto">
+  </div>
+  <div class="col-t-4 col-d-4">
+    <p class="standardWriting" style="text-align:left;padding-top:10%;" >Our packaging is reduced to: 
+      <br><br>One high quality mesh bag , designed to withstand the test of time, washable, and reusable .
+      <br><br>One transparent wrap necessary to prevent contamination during storage and transportation .
+    </p>
+  </div>
+</div>
+
+<!--second buy button-->
+
+<div class="row">
+  <div class="col-t-12 col-d-12" style="margin:0; padding:0;">
+      <a style="text-decoration:none;color:#003324;" href="https://www.amazon.co.uk/gp/product/B08X4YLC52">
+        <div class="button">
+          Buy us from Amazon UK!
+        </div>
+      </a>
+    </div>
+</div>
+
+
+<!-- second selling points read only-->
+<div class="row">
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div class="col-t-4 col-d-4" style="margin-left:5%; margin-right:-5%;">
+    <label style="margin-left:10%;">NO CHOKING HAZARD</label>
+    <img src="No Choke .jpg" alt="No choking hazard" width="80%" height="auto">
+  </div>
+  <div class="col-t-4 col-d-4">
+    <p class="standardWriting" style="text-align:left;padding-top:10%;" >
+      The magnets are secured in pouches underneath the balls surface.<br><br>
+      This makes our soft balls machine washable, using gentle spin.<br><br>      
+      The surface is smooth, with no parts that can be swallowed.<br><br>      
+      Each ball is responsibly hand finished.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-10%;">
+    <label style="margin-left:10%;">GOOD DIMENSIONS</label>
+    <img src="Dimensions.jpg" alt="Support InnovationBall dimensions" width="80%" height="auto">
+  </div>
+  <div class="col-t-5 col-d-5">
+    <p class="standardWriting" style="text-align:left;margin-top:5%;" >
+      x1 - Extra large soft ball - 4.5"/11cm diameter , containing 6 magnets <br><br>
+      x2 - Large soft balls - 3.5"/9 cm diameter, each containing 4 magnets<br><br>      
+      x4 - Medium soft balls - 2.8"/7 cm diameter, each containing 2 magnets<br><br>      
+      x5 - Small soft balls - 2"/5 cm diameter, each containing 1 magnet
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-5%;" >
+    <label style="margin-left:10%;">GROWS WITH BABY</label>
+    <img src="Full product.jpg" alt="Grows with baby" width="70%" height="auto">    
+  </div>
+  <div  class="col-t-5 col-d-5" >
+    <p class="standardWriting" style="text-align:left;margin-top:5%;"><br>
+        At 10 months - 1 year old , babies will enjoy these soft balls
+        as simple sensory toys, throwing them arround and
+       sticking each other or on simlpe surfaces.<br><br>
+      From 2-3 years old onwards, the sensory balls become construction blocks for developing young minds, 
+      leaving room for imaginative and more complex "sticky" play.<br><br>
+      Even adults have fun with them as stress balls, sensory balls, throw at your colleagues balls.<br><br>
+    </p>
+  </div>
+  <div id="hidden1" class="col-t-2 col-d-2"></div>
+</div>
+
+<!-- third buy button -->
+<div class="row">
+  <div class="col-t-12 col-d-12" style="margin:0; padding:0;">
+      <a style="text-decoration:none;color:#003324;" href="https://www.amazon.co.uk/gp/product/B08X4YLC52">
+        <div class="button">
+          We are available in Ireland and UK. Get us from Amazon UK! 
+        </div>
+      </a>
+    </div>
+</div>
+<hr>
+
+<!-- Footer -->
+<div name="footer" class="row">
+  <p class="col-m-6 col-t-6 col-d-6 footerText" style="text-align:left;">
+    <a href="mailto:elisabeth@mocanuinternational.com">Send us an email. </a><br><br>
+    Send us a postcard :<br>
+    27, Old Gloucester Street<br>
+    London, WC1N3AX, UK
+  </p>
+  <div class="col-m-6 col-t-6 col-d-6" >
+    <a class="linkDecor"  target="_blank" href="https://www.facebook.com/MibiToys/">
+      <p  class="footerText">We like Facebook <span>
+        <img class="smImage" src="Facebook.JPG" alt="Link to Facebook" width="20em" height="auto">
+      </span></p></a>
+    <a class="linkDecor" target="_blank" href="https://www.instagram.com/mibitoys">
+      <p  class="footerText"><span>
+        <img class="smImage" src="Instagram.JPG" alt="Link to Instagram" width="20em" height="auto"> 
+      </span> We love Instagram </p></a>
+      <a class="linkDecor" target="_blank" href="https://www.tiktok.com/@mibitoys">
+        <p  class="footerText">We adore TikTok <span>
+          <img class="smImage" src="tiktok.JPG" alt="Link to TikTok" width="20em" height="auto" >
+        </span></p></a>
+  </div>
+</div>
+  
+  
+
+
+
+
+
+
+
+<script>
+   //on page load - typewritter text//
+  let i = 0;
+  let txt = 'Here at Mibi Toys we have taken on the challenge of creating toys that are original, ' + 
+           'screen-free,  safe,  and  durable.';
+   let speed = 50;
+            
+   function typeWriter() {
+     if (i < txt.length) {
+       document.getElementById("h-1").innerHTML += txt.charAt(i);
+       i++;
+       setTimeout(typeWriter, speed);
+     }
+  }
+</script>
+
+<script>
+   //onmouseover - click me pop ups//
+  document.getElementById("img1").addEventListener("mouseover", clickMeVisible1);
+  document.getElementById("img1").addEventListener("mouseout", clickMeHidden1);
+  document.getElementById("img2").addEventListener("mouseover", clickMeVisible2);
+  document.getElementById("img2").addEventListener("mouseout", clickMeHidden2);
+  document.getElementById("img3").addEventListener("mouseover", clickMeVisible3);
+  document.getElementById("img3").addEventListener("mouseout", clickMeHidden3);
+
+  function clickMeVisible1() {
+    document.getElementById("img1-p1").style.visibility = "visible";
+    document.getElementById("img1-p2").style.visibility = "visible";
+    document.getElementById("img1-p3").style.visibility = "visible";
+ }
+
+  function clickMeHidden1() {
+    document.getElementById("img1-p1").style.visibility = "hidden";
+    document.getElementById("img1-p2").style.visibility = "hidden";
+    document.getElementById("img1-p3").style.visibility = "hidden";
+}
+
+  function clickMeVisible2() {
+    document.getElementById("img2-p1").style.visibility = "visible";
+    document.getElementById("img2-p2").style.visibility = "visible";
+    document.getElementById("img2-p3").style.visibility = "visible";
+}
+
+  function clickMeHidden2() {
+    document.getElementById("img2-p1").style.visibility = "hidden";
+    document.getElementById("img2-p2").style.visibility = "hidden";
+    document.getElementById("img2-p3").style.visibility = "hidden";
+}
+
+  function clickMeVisible3() {
+    document.getElementById("img3-p1").style.visibility = "visible";
+    document.getElementById("img3-p2").style.visibility = "visible";
+    document.getElementById("img3-p3").style.visibility = "visible";
+}
+
+  function clickMeHidden3() {
+    document.getElementById("img3-p1").style.visibility = "hidden";
+    document.getElementById("img3-p2").style.visibility = "hidden";
+    document.getElementById("img3-p3").style.visibility = "hidden";
+}
+</script>
+    
+<script>
+   //image overlay slide clicking on the main menu//
+  function openMagniTab(){
+    document.getElementById("magni").style.height = "100%";
+    document.getElementById("magni").addEventListener("click", function() {this.style.height = "0";});
+ }
+  function openPlushyTab(){
+    document.getElementById("plushy").style.height = "100%";
+    document.getElementById("plushy").addEventListener("click", function() {this.style.height = "0";});
+}
+  function openBallsTab(){
+   document.getElementById("balls").style.height = "100%";
+   document.getElementById("balls").addEventListener("click", function() {this.style.height = "0";});
+}
+</script>
+
+
+
+
+
+
+  </body>
+</html>
