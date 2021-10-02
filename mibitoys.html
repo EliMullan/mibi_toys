@@ -570,11 +570,13 @@ label {
 <!-- Footer -->
 <div name="footer" class="row">
   <p class="col-m-6 col-t-6 col-d-6 footerText" style="text-align:left;">
-    <a href="mailto:elisabeth@mocanuinternational.com">Send us an email. </a><br><br>
+    <a href="mailto:elisabeth@mocanuinternational.com">Send us an email. </a><br>
     Send us a postcard :<br>
     27, Old Gloucester Street<br>
-    London, WC1N3AX, UK
-  </p>
+    London, WC1N3AX, UK<br><br>
+    <span class="footerText" style="font-size: smaller;">
+    Copyright © <span id="year"></span> Mibi Toys UK - All Rights Reserved.    
+    @EliMullan webdesign</span></p>
   <div class="col-m-6 col-t-6 col-d-6" >
     <a class="linkDecor"  target="_blank" href="https://www.facebook.com/MibiToys/">
       <p  class="footerText">We like Facebook <span>
@@ -588,6 +590,7 @@ label {
         <p  class="footerText">We adore TikTok <span>
           <img class="smImage" src="tiktok.JPG" alt="Link to TikTok" width="20em" height="auto" >
         </span></p></a>
+     
   </div>
 </div>
   
@@ -677,7 +680,10 @@ label {
 }
 </script>
 
-
+<script>
+  const d = new Date();
+  document.getElementById("year").innerHTML = d.getFullYear();
+</script>
 
 
 
