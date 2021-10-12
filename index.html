@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-UK">
-<head>
-  <meta name="viewport" content="width=device-width;initial-scale=1">
-  <title>Mibi Toys - Magni Plushy Balls</title>
+<title>Magni Plushy Balls - Magnetic toys for babies - Soft </title>
+<meta name="keywords" content="soft, ball, magnet, baby, one year old, toy, toys">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+<head> 
 <style>
 * {
   box-sizing: border-box;
@@ -11,23 +13,21 @@
 body {
   margin-left: 20px;
   margin-right: 20px;
-  font-family: 'Verdana', 'Georgia','Book-antiqua' sans-serif;
+  font-family: 'Garamond','Georgia','Book-antiqua', sans-serif;
 }
 
 h2 {
-  font-family: "Garamond";
-  font-optical-sizing: 20px;
   text-align: center;
   padding: 0;
   color: #003324;
   margin-top : 9%; 
+  text-shadow: 0.5px 0.5px rgb(133,130,130);
 }
 
 h1 {
-  font-family: "Garamond";
-  font-optical-sizing: 20px;
   text-align: center;
   padding: 0; 
+  text-shadow: 0.5px 0.5px rgb(133,130,130);
 }
 
 label {
@@ -45,25 +45,21 @@ label {
 
 .standardWriting {
   font-weight: bold;
-  font-family:"Garamond";
-  font-optical-sizing: 20px;
   text-align:center;
-  color: #003324;           
+  color: #003324;  
 }
 
 .ClickToClose {
   color: grey;
-  margin-top:-10px;
+  margin-top:-0.9em;
   font-weight: lighter;
+  font-size:0.7em;
 }
 
 .footerText {
-  font-family:"Garamond";
-  font-optical-sizing: 10px;
   text-align:right;
   color: #003324; 
   font-style: italic;
-  font-size:medium; 
 }
 
 .smImage{
@@ -77,10 +73,14 @@ label {
   color:#003324;
 }
 
+.box-shadow {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+	border-radius:10px;
+	margin-bottom:1em;
+	}
 #img1-p1, #img1-p2, #img1-p3, #img2-p1, #img2-p2, #img2-p3, #img3-p1, #img3-p2, #img3-p3 {
   position: absolute;
   visibility: hidden;
-  font-optical-sizing: 10px;
   color: #003324;
   font-weight:bold;
   background-color: white;
@@ -89,6 +89,7 @@ label {
     
 #img1:hover , #img2:hover, #img3:hover {
   transform: translateY(8px);
+  cursor: pointer;
 }
 
 .expandingBox {
@@ -106,10 +107,7 @@ label {
 .button {
   margin-top: auto;
   padding: 12px 16px;
-  font-size: 26px;
-  font-weight: bold;
-  font-family:"Garamond";
-  font-optical-sizing: 20px;
+  font-weight: bold;  
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -127,6 +125,39 @@ label {
   transform: translateY(4px);
 }
 
+p.mobile {
+   position: absolute;
+   bottom: 1%;
+   left: 5%;
+   font-style: italic;
+   font-size: small;
+   animation: blink 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes blink {
+  from {
+   opacity: 10%;
+  }
+  
+  to {
+    opacity:100%;
+  }
+}
+
+p.mobileText {
+	font-size:0.8em;
+	}
+li.responsive {
+	margin-bottom:1em;
+	list-style-type:circle;
+	font-size:small;
+	}
+
+ul.responsive {
+	margin-top: -1%;
+	}
+	
 .row::after {
   content: "";
   clear: both;
@@ -157,27 +188,45 @@ label {
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
 
+ h2 {
+  font-size: 1em;
+	}
+
+ h1 {
+  font-size: 1.3em;
+	}
+.button {
+	font-size:1.2em;
+	}
+ .footerText {
+	 font-size:0.5em;
+	}
+
   #img_header_1 {
     width: 80%;
     margin-left: 10%;
+	margin-bottom: -3em;
   }
 
   #img_header_2 {
     width: 80%;
     margin-left: 10%;
+	margin-top:-3em;
   }
-
+	
+ #h-1 {
+    min-height: 7em;
+  }
+	
    #hidden1 {
     visibility: hidden;
   }
-  #h-1 {
-    min-height: 5em;
-  }
+ 
+   #img1-p1, #img1-p2, #img1-p3, #img2-p1, #img2-p2, #img2-p3, #img3-p1, #img3-p2, #img3-p3 {
+  opacity: 0;
+}
 
-  #Img_babycrawl {
-    margin-left:15%;
-    margin-top:10px;
-  }
+ 
 }
 
 /* For tablet */
@@ -194,6 +243,14 @@ label {
   .col-t-10 {width: 83.33%;}
   .col-t-11 {width: 91.66%;}
   .col-t-12 {width: 100%;}
+
+	.button {
+	font-size:1.5em;
+	}
+
+  .footerText {
+	 font-size:1em;
+   }
 
   #presentation-3 {
     width: 60%;
@@ -245,6 +302,10 @@ label {
     left:45%
   }
 
+  p.mobile {
+    display: none;
+  }
+
   #img_header_1 {
     width: 60%;
     margin-top: -10%;
@@ -258,7 +319,20 @@ label {
     margin-left:15%;
     margin-top:10px;
   }
-}
+	
+  p.mobileText {
+	font-size:1em;
+	}	
+
+  li.responsive {
+	  text-align: left;
+	  font-size: medium;
+	}
+ ul.responsive {
+	margin-top: 5%;
+	}
+
+ }
 
 /* For desktop */
 @media only screen and (min-width: 768px){
@@ -274,6 +348,14 @@ label {
   .col-d-10 {width: 83.33%;}
   .col-d-11 {width: 91.66%;}
   .col-d-12 {width: 100%;}
+	
+  .button {
+	font-size:1.8em;
+	}
+	
+  .footerText {
+	 font-size:1em;
+   }
 
   #presentation-3 {
     width: 33.33%;
@@ -314,16 +396,26 @@ label {
     margin-left:20%;
   }
 
+  p.mobile {
+    display: none;
+  }
+
+	p.mobileText {
+	font-size:1em;
+	padding-left:15%;
+	padding-right:15%;
+	}
+
 }
 </style>
 </head>
 <body onload = "typeWriter()">
 
-
+<div style="padding:3%;">
 <!-- Header-->
 
 <div>
-  <div>
+  <div style="margin-bottom:-3em;">
     <a class="linkDecor" target="_blank" href="https://www.facebook.com/MibiToys/">     
         <img class="smImage"  src="Facebook.JPG" alt="Link to Facebook" width="20em" height="auto">
      </a>
@@ -351,52 +443,55 @@ label {
   </h2>
         
     <div name="Main" class="row ">
-      <div class="col-t-6 col-d-4 container-clickMe">
+      <div class="col-t-6 col-d-4 container-clickMe ">
         <h1>Magni</h1>
         <img id="img1" src="div Main - Magni.jpg" onclick="openMagniTab()" 
         alt="Magnet balls" width="100%" height="auto">
         <p id="img1-p1" >Click me!!!</p>
         <p id="img1-p2" >Click me!!!</p>
         <p id="img1-p3" >Click me!!!</p>
+        <p class="mobile" >Click me!!!</p>
         <div id="magni" class="expandingBox" >         
-          <p class="standardWriting">Each magnet is secured in pouches <br> underneath the balls surface.</p>
-          <p class="standardWriting">The outer surface remains smooth,<br> with no parts that could be swallowed.</p>
-          <p class="standardWriting">Each ball attracts or repels according to the magnets polarity.
+          <p class="standardWriting mobileText" >Each magnet is secured in pouches <br> underneath the balls surface.</p>
+          <p class="standardWriting mobileText" >The outer surface remains smooth,<br> with no parts that could be swallowed.</p>
+          <p class="standardWriting mobileText" >Each ball attracts or repels according to the magnets polarity.
             This process creates invisible obstacles that will trigger natural curiosities.</p>
-          <img src="div subMain - magnet pouch.jpg" alt="Magnet in pouch" width="75%" height="30%"> 
+          <img src="div subMain - magnet pouch.jpg" alt="Magnet in pouch" width="70%" height="30%"> 
           <p class="ClickToClose">Click again to close</p>
         </div> 
       </div>
-      <div class=" col-t-6 col-d-4 container-clickMe">
+      <div class=" col-t-6 col-d-4 container-clickMe ">
         <h1>Plushy</h1>
         <img id="img2" src="div Main - Plushy.jpg" onclick="openPlushyTab()" 
          alt="Plush balls" width="100%" height="auto">
         <p id="img2-p1" >Click me!!!</p>
         <p id="img2-p2" >Click me!!!</p>
         <p id="img2-p3" >Click me!!!</p>
+        <p class="mobile">Click me!!!</p>
         <div id="plushy" class="expandingBox" >         
-          <p class="standardWriting">Soft, velvet like surface,with durable stiches.</p>
-          <p class="standardWriting">Works fantastic as a sensory toy.</p>
-          <p class="standardWriting">EN71/UKCA certified.Cadmium and Chronium free.<br>
+          <p class="standardWriting mobileText">Soft, velvet like surface,with durable stiches.</p>
+          <p class="standardWriting mobileText">Works fantastic as a sensory toy.</p>
+          <p class="standardWriting mobileText">EN71/UKCA certified.Cadmium and Chronium free.<br>
            Azo Dyes tested.Flamability tested.<br>BPA-free, non-toxic, Phtalate, Latex Free
           <br>Lead and Formamide free.</p>
-          <img src="div subMain -plushies.jpg" alt="Magnet in pouch" width="70%" height="45%"> 
-          <p class="ClickToClose">Click again to close</p>
+          <img src="div subMain -plushies.jpg" alt="Magnet in pouch" width="60%" height="45%"> 
+          <p class="ClickToClose" id="tabletClickToClose">Click again to close</p>
         </div>
     </div>
-      <div id="presentation-3" class=" col-t-12 col-d-4 container-clickMe">
+      <div id="presentation-3" class=" col-t-12 col-d-4 container-clickMe " >
         <h1>Balls</h1>
         <img id="img3" src="div Main - Balls.jpg" onclick="openBallsTab()" 
         alt="Magnetic plush balls" width="100%" height="auto"> 
         <p id="img3-p1">Click me!!!</p>
         <p id="img3-p2">Click me!!!</p>
         <p id="img3-p3">Click me!!!</p> 
+        <p class="mobile" >Click me!!!</p>
         <div id="balls" class="expandingBox" >         
-          <p class="standardWriting">12 balls with different dimensions.<br>Safe to throw arround.</p>
-          <p class="standardWriting">Stick to any magnetic or metallic surface.</p>
-          <p class="standardWriting">Compatible to any magnetic or metallic toy,<br>
+          <p class="standardWriting mobileText">12 balls with different dimensions.<br>Safe to throw arround.</p>
+          <p class="standardWriting mobileText">Stick to any magnetic or metallic surface.</p>
+          <p class="standardWriting mobileText">Compatible to any magnetic or metallic toy,<br>
            like magnetic tiles, magnetic play boards <br>or magnetic numbers and letters.</p>
-          <img src="div subMain - robot.jpg" alt="Magnet in pouch" width="80%" height="35%"> 
+          <img src="div subMain - robot.jpg" alt="Magnet in pouch" width="70%" height="33%"> 
           <p class="ClickToClose">Click again to close</p>
         </div>
       </div>          
@@ -405,14 +500,14 @@ label {
  <hr>
 
 <!-- first buy button -->
-</div>
+
 <div class="row">
   <div class="col-t-12 col-d-12">
     <a style="text-decoration:none;color:#003324;" href="https://www.amazon.co.uk/gp/product/B08X4YLC52">
       <div class="button">
-        Buy us from Amazon UK!
+        Get us on Amazon UK!
       </div>
-      <img id="Img_babycrawl"src="Baby_crawl.jpg" alt="Plush ball worm" width="70%" height="10%">
+      <img src="Baby_crawl.jpg" alt="Plush ball worm" style="display:block;margin:auto;margin-top:10px;" width="60%" height="10%">
     </a>
   </div>
 </div>
@@ -450,53 +545,52 @@ label {
 <hr>
 
 <!-- selling points read only-->
-<div class="row">
-  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-5%;" >
-    <label style="margin-left:10%;">EQUAL PLAY</label>
-    <img src="equal play.jpg" alt="Equal Play" width="80%" height="auto">    
-  </div>
-  <div  class="col-t-5 col-d-5" >
-    <p class="standardWriting" style="text-align:left;margin-top:5%;">Play is crucial to how children develop and learn about the world.
-    <br><br>We believe in giving all children equal opportunities, starting with preschool years.
-    <br><br> Our toy design and marketing stand against gender-stereotypes.</p>
-  </div>
-  <div id="hidden1" class="col-t-2 col-d-2"></div>
-</div>
-
-<div class="row">
-  <div id="Hidden1" class="col-t-2 col-d-2"></div>
-  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-10%;">
-    <label style="margin-left:10%;">SUPPORT INNOVATION</label>
-    <img src="support innovation.jpg" alt="Support Innovation" width="80%" height="auto">
-  </div>
+<div class="row box-shadow">
   <div class="col-t-5 col-d-5">
-    <p class="standardWriting" style="text-align:left;margin-top:5%;" >We are an Irish startup driven by the purpose of creating new concept , sustainable toys.
-      <br><br>Our philosophy is to create inteligent and durable non-screen toys .</p>
+    <p class="standardWriting mobileText">EQUAL PLAY</p>
+    <img style="display:block;margin:auto;" src="equal play.jpg" alt="Equal Play" width="80%" height="auto">    
   </div>
+    <ul class="col-t-5 col-d-5 standardWriting mobileText responsive">
+		<li class="responsive">Play is crucial to how children develop and learn about the world.</li>
+		<li class="responsive">We believe in giving all children equal opportunities, starting with preschool years.</li>
+		<li class="responsive">Our toy design and marketing stand against gender-stereotypes.</li>
+	</ul>
+   <div id="hidden1" class="col-t-2 col-d-2"></div>
 </div>
 
-<div class="row">
+<div class="row box-shadow">
+  <div id="Hidden1" class="col-t-2 col-d-2"></div>
+  <div class="col-t-5 col-d-5 " >
+    <p class="standardWriting mobileText">SUPPORT INNOVATION</p>
+    <img style="display:block;margin:auto;" src="support innovation.jpg" alt="Support Innovation" width="80%" height="auto">
+  </div>
+ 	<ul class="col-t-5 col-d-5 standardWriting mobileText responsive">
+      <li class="responsive">We are an Irish startup driven by the purpose of creating new concept , sustainable toys.</li>
+      <li class="responsive">Our philosophy is to create inteligent and durable non-screen toys .</li>
+  </ul>	
+</div>
+
+<div class="row box-shadow">
   <div id="Hidden1" class="col-t-2 col-d-2"></div>
   <div id="Hidden1" class="col-t-2 col-d-2"></div>
-  <div class="col-t-4 col-d-4" style="margin-left:5%; margin-right:-5%;">
-    <label style="margin-left:10%;">ZERO WASTE IN MIND</label>
-    <img src="zero waste.jpg" alt="Zero waste in mind" width="80%" height="auto">
+  <div class="col-t-4 col-d-4" >
+    <p class="standardWriting mobileText">ZERO WASTE IN MIND</p>
+    <img style="display:block;margin:auto;" src="zero waste.jpg" alt="Zero waste in mind" width="80%" height="auto">
   </div>
-  <div class="col-t-4 col-d-4">
-    <p class="standardWriting" style="text-align:left;padding-top:10%;" >Our packaging is reduced to: 
-      <br><br>One high quality mesh bag , designed to withstand the test of time, washable, and reusable .
-      <br><br>One transparent wrap necessary to prevent contamination during storage and transportation .
-    </p>
-  </div>
+  <ul class="col-t-4 col-d-4 standardWriting mobileText responsive">
+	<li class="responsive" style="list-style-type:none;">Our packaging is reduced to:</li>
+    <li class="responsive">One high quality mesh bag , designed to withstand the test of time, washable, and reusable .</li>
+    <li class="responsive">One transparent wrap necessary to prevent contamination during storage and transportation . </li>
+  </ul>
 </div>
 
 <!--second buy button-->
 
 <div class="row">
-  <div class="col-t-12 col-d-12" style="margin:0; padding:0;">
+  <div class="col-t-12 col-d-12" style="margin:-5px; padding:0;background-color:white;">
       <a style="text-decoration:none;color:#003324;" href="https://www.amazon.co.uk/gp/product/B08X4YLC52">
         <div class="button">
-          Buy us from Amazon UK!
+          Get us on Amazon UK!
         </div>
       </a>
     </div>
@@ -504,54 +598,46 @@ label {
 
 
 <!-- second selling points read only-->
-<div class="row">
+<div class="row box-shadow">
   <div id="Hidden1" class="col-t-2 col-d-2"></div>
   <div id="Hidden1" class="col-t-2 col-d-2"></div>
-  <div class="col-t-4 col-d-4" style="margin-left:5%; margin-right:-5%;">
-    <label style="margin-left:10%;">NO CHOKING HAZARD</label>
-    <img src="No Choke .jpg" alt="No choking hazard" width="80%" height="auto">
+  <div class="col-t-4 col-d-4" >
+    <p class="standardWriting mobileText">NO CHOKING HAZARD</p>
+    <img style="display:block;margin:auto;" src="No Choke .jpg" alt="No choking hazard" width="80%" height="auto">
   </div>
-  <div class="col-t-4 col-d-4">
-    <p class="standardWriting" style="text-align:left;padding-top:10%;" >
-      The magnets are secured in pouches underneath the balls surface.<br><br>
-      This makes our soft balls machine washable, using gentle spin.<br><br>      
-      The surface is smooth, with no parts that can be swallowed.<br><br>      
-      Each ball is responsibly hand finished.
-    </p>
-  </div>
+  <ul class="col-t-4 col-d-4 standardWriting mobileText responsive">
+	  <li class="responsive">The magnets are secured in pouches underneath the balls surface.</li>
+	  <li class="responsive">This makes our soft balls machine washable, using gentle spin.</li>
+	  <li class="responsive">The surface is smooth, with no parts that can be swallowed.</li>
+      <li class="responsive">Each ball is responsibly hand finished.</li>
+  </ul>
 </div>
 
-<div class="row">
+<div class="row box-shadow">
   <div id="Hidden1" class="col-t-2 col-d-2"></div>
-  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-10%;">
-    <label style="margin-left:10%;">GOOD DIMENSIONS</label>
-    <img src="Dimensions.jpg" alt="Support InnovationBall dimensions" width="80%" height="auto">
-  </div>
   <div class="col-t-5 col-d-5">
-    <p class="standardWriting" style="text-align:left;margin-top:5%;" >
-      x1 - Extra large soft ball - 4.5"/11cm diameter , containing 6 magnets <br><br>
-      x2 - Large soft balls - 3.5"/9 cm diameter, each containing 4 magnets<br><br>      
-      x4 - Medium soft balls - 2.8"/7 cm diameter, each containing 2 magnets<br><br>      
-      x5 - Small soft balls - 2"/5 cm diameter, each containing 1 magnet
-    </p>
+    <p class="standardWriting mobileText">GOOD DIMENSIONS</p>
+    <img style="display:block;margin:auto;" src="Dimensions.jpg" alt="Support InnovationBall dimensions" width="80%" height="auto">
   </div>
+  <ul class="col-t-5 col-d-5 standardWriting mobileText responsive">
+    <li class="responsive">x1 - Extra large magnetic soft ball - 4.5"/11cm diameter , containing 6 magnets </li>
+    <li class="responsive">x2 - Large magnetic soft balls - 3.5"/9 cm diameter, each containing 4 magnets</li>      
+    <li class="responsive">x4 - Medium magnetic soft balls - 2.8"/7 cm diameter, each containing 2 magnets</li>      
+    <li class="responsive">x5 - Small magnetic soft balls - 2"/5 cm diameter, each containing 1 magnet</li>
+  </ul>
 </div>
 
-<div class="row">
-  <div class="col-t-5 col-d-5" style="margin-left:5%; margin-right:-5%;" >
-    <label style="margin-left:10%;">GROWS WITH BABY</label>
-    <img src="Full product.jpg" alt="Grows with baby" width="70%" height="auto">    
+<div class="row box-shadow">
+  <div class="col-t-5 col-d-5" >
+    <p class="standardWriting mobileText">GROWS WITH BABY</p>
+    <img style="display:block;margin:auto;" src="Full product.jpg" alt="Grows with baby" width="60%" height="auto">    
   </div>
-  <div  class="col-t-5 col-d-5" >
-    <p class="standardWriting" style="text-align:left;margin-top:5%;"><br>
-        At 10 months - 1 year old , babies will enjoy these soft balls
-        as simple sensory toys, throwing them arround and
-       sticking each other or on simlpe surfaces.<br><br>
-      From 2-3 years old onwards, the sensory balls become construction blocks for developing young minds, 
-      leaving room for imaginative and more complex "sticky" play.<br><br>
-      Even adults have fun with them as stress balls, sensory balls, throw at your colleagues balls.<br><br>
-    </p>
-  </div>
+  <ul class="col-t-5 col-d-5 standardWriting mobileText responsive" >
+    <li class="responsive">A 10 months - 1 year old baby will enjoy our magnetic balls as simple sensory toys. Our test have shown they take great pleasure in throwing them around. But when the balls happen to stick, then different games begin. </li>
+     <li class="responsive">From 2-3 years old onward, the sensory balls become construction blocks for developing young minds, 
+      leaving room for imaginative and more complex "sticky" play.</li>
+      <li class="responsive">Adults use them as stress balls, sensory balls, throw at your colleagues balls.</li>
+  </ul>
   <div id="hidden1" class="col-t-2 col-d-2"></div>
 </div>
 
@@ -560,7 +646,7 @@ label {
   <div class="col-t-12 col-d-12" style="margin:0; padding:0;">
       <a style="text-decoration:none;color:#003324;" href="https://www.amazon.co.uk/gp/product/B08X4YLC52">
         <div class="button">
-          We are available in Ireland and UK. Get us from Amazon UK! 
+          Get us on Amazon UK! 
         </div>
       </a>
     </div>
@@ -570,12 +656,12 @@ label {
 <!-- Footer -->
 <div name="footer" class="row">
   <p class="col-m-6 col-t-6 col-d-6 footerText" style="text-align:left;">
-    <a href="mailto:elisabeth@mocanuinternational.com">Send us an email. </a><br>
+    <a href="mailto:hello@mibitoys.com">Send us an email. </a><br>
     Send us a postcard :<br>
     27, Old Gloucester Street<br>
     London, WC1N3AX, UK<br><br>
     <span class="footerText" style="font-size: smaller;">
-    Copyright © <span id="year"></span> Mibi Toys UK - All Rights Reserved.    
+    Copyright &copy; <span id="year"></span> Mibi Toys UK - All Rights Reserved.    
     @EliMullan webdesign</span></p>
   <div class="col-m-6 col-t-6 col-d-6" >
     <a class="linkDecor"  target="_blank" href="https://www.facebook.com/MibiToys/">
@@ -593,7 +679,7 @@ label {
      
   </div>
 </div>
-  
+	</div>
   
 
 
